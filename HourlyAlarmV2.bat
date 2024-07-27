@@ -7,3 +7,10 @@ rem Display the message
 msg * "Hourly Reminder: It's time to check this and that and everything!!!"
 
 exit
+
+# add this to a task scheduler or add the following lines
+rem Wait for 1 hour (3600 seconds)
+timeout /t 3600
+
+rem Go back to the start of the loop
+goto start
